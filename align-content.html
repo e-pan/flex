@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>align-items 多根轴的排列方式</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-flex-start'>
+      <span>align-content: flex-start;</span>
+      <span></span>
+      <span></span>
+      <span>align-content: flex-start;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-flex-end'>
+      <span>align-content: flex-end;</span>
+      <span></span>
+      <span></span>
+      <span>align-content: flex-end;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-center'>
+      <span>align-content: center;</span>
+      <span></span>
+      <span></span>
+      <span>align-content: center;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-space-around'>
+      <span>align-content: space-around;</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-space-between'>
+      <span>align-content: space-between;</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</body>
+<style type="text/css">
+  div {}
+  .box-space-between {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .box-space-around {
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .box-center {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .box-flex-start {
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .box-flex-end {
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+</style>
+</html>

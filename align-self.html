@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>align-self 单个脱离其他对齐</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-flex'>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-3'>3</span>
+    </div>
+</body>
+<style type="text/css">
+  div {}
+  .box-flex span {
+    align-items: flex-start;
+  }
+  .span-2 {
+    align-self: flex-end;
+  }
+</style>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flex (flex-grow flex-shrink flex-basis的缩写)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-flex'>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-3'>3</span>
+    </div>
+    <div class='box-flex'>
+      <span class='span-1'>1</span>
+      <span class='span-4'>2</span>
+      <span class='span-3'>3</span>
+      <span class='span-3'>3</span>
+      <span class='span-3'>3</span>
+      <span class='span-3'>3</span>
+      <span class='span-3'>3</span>
+    </div>
+</body>
+<style type="text/css">
+  div {}
+  .box-flex span {
+    flex: 1 1 auto;
+  }
+  .box-flex .span-4 {
+    flex: 1 0 auto;
+  }
+</style>
+</html>

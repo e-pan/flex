@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>align-items 交叉轴对齐方式</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-flex-start'>
+      <span>align-items: flex-start;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-flex-end'>
+      <span>align-items: flex-end;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-center'>
+      <span>align-items: center;</span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-baseline'>
+      <span>baseline</span>
+      <span class='h-200'></span>
+      <span class='h-50'>align-items: baseline;</span>
+    </div>
+    <div class='box-stretch'>
+      <span>align-items: stretch; 延伸</span>
+      <span></span>
+      <span></span>
+    </div>
+</body>
+<style type="text/css">
+  div {
+    height: 300px;
+  }
+  .h-200 {
+    padding: 20px;
+    height: 100px;
+  }
+  .h-50 {
+    padding: 50px;
+    height: 50px;
+  }
+  .box-stretch {
+    align-items: stretch;
+  }
+  .box-stretch span {
+    height: auto;
+  }
+  .box-baseline {
+    align-items: baseline;
+  }
+  .box-center {
+    align-items: center;
+  }
+  .box-flex-start {
+    align-items: flex-start;
+  }
+  .box-flex-start {
+    align-items: flex-start;
+  }
+</style>
+</html>

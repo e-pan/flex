@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flex-wrap 主轴排不下怎么换行？</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-nowrap'>
+      <span>flex-wrap: nowrap;</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-wrap'>
+      <span>flex-wrap: wrap;</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class='box-wrap-reverse'>
+      <span>flex-wrap: wrap-reverse;</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</body>
+<style type="text/css">
+  .box-nowrap {
+    flex-wrap: norow;
+  }
+  .box-wrap {
+    flex-wrap: wrap;
+  }
+  .box-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+</style>
+</html>

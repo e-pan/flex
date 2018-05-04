@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flex-shrink 排列顺序</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class='box-flex-shrink'>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-3'>3</span>
+      <span class='span-4'>4</span>
+      <span class='span-5'>5</span>
+      <span class='span-6'>6</span>
+    </div>
+    <div class='box-flex-shrink'>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-1'>1</span>
+      <span class='span-2'>2</span>
+      <span class='span-3'>3</span>
+      <span class='span-4'>4</span>
+      <span class='span-7'>5</span>
+      <span class='span-6'>6</span>
+    </div>
+</body>
+<style type="text/css">
+  /* 默认为1，即如果空间不足，该项目将缩小。 */
+  .box-flex-shrink .span-1 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-2 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-3 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-4 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-5 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-6 {
+    flex-shrink: 1;
+  }
+  .box-flex-shrink .span-7 {
+    /* 如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。 */
+    flex-shrink: 0;
+  }
+</style>
+</html>
